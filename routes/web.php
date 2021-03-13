@@ -66,6 +66,7 @@ Route::get('admin/user/change-status/{id}', 'Admin\UserController@changeStatus',
 
 //auth routes
 Route::get('/register' , 'Auth\RegisterController@view' , 'admin.register.view');
+Route::get('/register' , 'Auth\RegisterController@register' , 'admin.register');
 
 
 
