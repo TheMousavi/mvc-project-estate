@@ -65,6 +65,8 @@ Route::get('admin/user/change-status/{id}', 'Admin\UserController@changeStatus',
 
 
 //auth routes
+Route::get('/login' , 'Auth\LoginController@view' , 'auth.login.view');
+Route::post('/login' , 'Auth\LoginController@login' , 'auth.login');
 Route::get('/register' , 'Auth\RegisterController@view' , 'auth.register.view');
 Route::post('/register' , 'Auth\RegisterController@register' , 'auth.register');
 Route::get('/activation/{token}' , 'Auth\RegisterController@activation' , 'auth.activation');

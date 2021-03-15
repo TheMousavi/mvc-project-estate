@@ -6,7 +6,6 @@ use App\Http\Requests\Auth\RegisterRequest;
 use App\Http\Services\ImageUpload;
 use App\Http\Services\MailService;
 use App\User;
-use mysql_xdevapi\Session;
 
 class RegisterController
 {
