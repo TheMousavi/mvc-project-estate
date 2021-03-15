@@ -23,17 +23,17 @@
                                 </div>
                             </div>
                             <p class="px-2">برای ایجاد حساب اطلاعات زیر را وارد کنید</p>
-                          
+                            <?php if (errorExists()) { ?>
                             <div class="alert alert-danger">
-                                <ul>
-                                
+                                <ul style="list-style-type: none">
+                                <?php foreach (allErrors() as $error) { ?>
                                     <li>
-                                     خطا
+                                     <?= $error ?>
                                     </li>
-                                  
+                                 <?php } ?>
                                 </ul>
                             </div>
-                        
+                            <?php } ?>
                             <div class="card-content">
                                 <div class="card-body pt-0">
                                     <form action="" method="post" enctype="multipart/form-data">
