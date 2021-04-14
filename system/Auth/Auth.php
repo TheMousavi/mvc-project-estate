@@ -8,23 +8,23 @@ use System\Session\Session;
 
 class Auth
 {
-   
+
     private $redirectTo = "/login";
 
     private function userMethod()
     {
-      if(!Session::get('user'))
-      {
-          return redirect($this->redirectTo);
-      }
-      $user = User::find(Session::get('user'));
-      if(empty($user))
-      {
-          Session::remove('user');
-          return redirect($this->redirectTo);
-      }
-      else
-      return $user;
+        if(!Session::get('user'))
+        {
+            return redirect($this->redirectTo);
+        }
+        $user = User::find(Session::get('user'));
+        if(empty($user))
+        {
+            Session::remove('user');
+            return redirect($this->redirectTo);
+        }
+        else
+            return $user;
     }
 
     private function checkMethod()
@@ -40,7 +40,7 @@ class Auth
             return redirect($this->redirectTo);
         }
         else
-        return true;
+            return true;
     }
 
     private function checkLoginMethod()
@@ -52,10 +52,10 @@ class Auth
         $user = User::find(Session::get('user'));
         if(empty($user))
         {
-           return false;
+            return false;
         }
         else
-        return true;
+            return true;
     }
 
     private function loginByEmailMethod($email, $password)

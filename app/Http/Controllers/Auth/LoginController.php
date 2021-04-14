@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
+
 use App\Http\Requests\Auth\LoginRequest;
 use App\User;
 use System\Auth\Auth;
 
-class LoginController
-{
+class LoginController{
+
     private $redirectTo = "/home";
     private $redirectToAdmin = "/admin";
 
@@ -16,15 +17,16 @@ class LoginController
         return view("auth.login");
     }
 
+
     public function login()
     {
         Auth::logout();
         $request = new LoginRequest();
-        if (Auth::loginByEmail($request->email , $request->password))
+        if(Auth::loginByEmail($request->email, $request->password))
         {
-            $user = User::where('email' , $request->email)->get();
+            $user = User::where('email', $request->email)->get();
             $user = $user[0];
-            if ($user->user_type == 'admin')
+            if($user->user_type == 'admin')
             {
                 return redirect($this->redirectToAdmin);
             }
@@ -37,6 +39,7 @@ class LoginController
         {
             return back();
         }
+
     }
 
 

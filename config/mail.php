@@ -4,11 +4,11 @@ return [
     'SMTP' => [
         'Host' => 'smtp.gmail.com',
         'SMTPAuth' => true ,
-        'Username' => 'your email@gmail.com' ,
-        'Password' => 'your pass',
+        'Username' => 'amirhtaef@gmail.com' ,
+        'Password' => 'amir09156498438',
         'Port' => 587 ,
         'setFrom' => [
-            'mail' => 'your email@gmail.com',
+            'mail' => 'amirhtaef@gmail.com',
             'name' => 'php-mvc'
         ]
     ]
