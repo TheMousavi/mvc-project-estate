@@ -133,15 +133,15 @@
                         <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="9000">0</strong>
-                                    <span>مشتریان خوشحال</span>
+                                    <strong class="number" data-number="<?= $postsCount ?>">0</strong>
+                                    <span>پست ها</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="10000">0</strong>
+                                    <strong class="number" data-number="<?= $adsCount ?>">0</strong>
                                     <span>آگهی ها</span>
                                 </div>
                             </div>
@@ -149,15 +149,15 @@
                         <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="1000">0</strong>
-                                    <span>نمایندگان</span>
+                                    <strong class="number" data-number="<?= $usersCount ?>">0</strong>
+                                    <span>کاربران</span>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
                             <div class="block-18 text-center">
                                 <div class="text">
-                                    <strong class="number" data-number="100">0</strong>
+                                    <strong class="number" data-number="<?= $sumArea ?>">0</strong>
                                     <span>متراژ کلی </span>
                                 </div>
                             </div>
