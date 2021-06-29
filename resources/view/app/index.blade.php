@@ -188,7 +188,7 @@
                         <div class="text mt-3 d-block">
                             <h3 class="heading mt-3"><a href="#"><?= $post->title ?></a></h3>
                             <div class="meta mb-3">
-                                <div><a href="#">۱۳۹۸/۲/۲۹</a></div>
+                                <div><a href="#"><?= \Morilog\Jalali\Jalalian::forge($post->created_at)->format('%A, %d %B %y'); ?></a></div>
                                 <div><a href="#"><?= $post->user()->first_name . ' ' . $post->user()->last_name ?></a></div>
                                 <div><a href="#" class="meta-chat"><span class="icon-chat"></span> ۳</a></div>
                             </div>
