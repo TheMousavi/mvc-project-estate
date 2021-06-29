@@ -4,6 +4,7 @@ use System\Router\Web\Route;
 
 Route::get('/', 'HomeController@index', 'home.index');
 Route::get('/home', 'HomeController@index', 'home.home');
+Route::get('/about', 'HomeController@about', 'home.about');
 
 
 //Admin Route
